@@ -1,5 +1,5 @@
 import from byllm.lib { Model }
-glob llm = Model(model_name="gpt-4o",api_key="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");
+glob llm = Model(model_name="gpt-4o",api_key="your-API-key-here");
 
 enum Personality {
     INTROVERT,

@@ -1,0 +1,32 @@
+# ------------------
+# Environment/Virtual Environments
+# ------------------
+# Python virtual environment folders
+venv/
+env/
+.venv/
+
+# ------------------
+# Byte-compiled / Optimized files
+# ------------------
+# Compiled Python files (automatically generated)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ------------------
+# Distribution / packaging
+# ------------------
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ------------------
+# Logs and other temporary files
+# ------------------
+*.log
+htmlcov/
+.coverage
+.pytest_cache/

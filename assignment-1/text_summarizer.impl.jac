@@ -1,18 +1,23 @@
-impl turn.check{
-    guess = input("Enter a text: ");
-    visit [-->];
+# Implement traversal logic
+impl Document.explore_topics {
+    visit [-->(`?Topic)];
 }
 
-
-impl Document.start_game{
-    end: `root | turn = here;
-    for i = 0 to i < 10 by i += 1 {
-        end ++> (end := turn());
-    }
-    visit [-->];
-}
-
-
-impl Document.count_characters(text: str) {
+impl Topic.collect_sentences {
+    visit [-->(`?Sentence)];
     
+
+}
+
+impl Sentence.collect_words {
+
+    key_sentences = [self -->(`?Sentence)];
+
+    
+    print(f"Summary: {visitor.summary}");
+    
+}
+
+impl summarizer.build_summary {
+    visit [-->(`?Document)];
 }
